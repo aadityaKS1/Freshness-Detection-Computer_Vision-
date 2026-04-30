@@ -26,9 +26,9 @@ to food waste. This system automates that process in real time.
 Two models work together in a single pipeline:
 Input (Image / Video / Webcam)
 ↓
-YOLOv8 — detects and localizes each fruit/vegetable
+YOLOv8 - detects and localizes each fruit/vegetable
 ↓
-MobileNetV3 — classifies each detected object as Fresh or Rotten
+MobileNetV3 - classifies each detected object as Fresh or Rotten
 ↓
 Output with bounding boxes + freshness labels
 
@@ -40,6 +40,10 @@ Output with bounding boxes + freshness labels
 ---
 
 ## Project Structure
+
+```
+Freshness-Detection-Computer_Vision/
+│
 ├── models/              # Trained YOLOv8 and MobileNetV3 model weights
 ├── utils/               # Helper functions for preprocessing and inference
 ├── Testing/             # Test images and validation scripts
@@ -48,17 +52,17 @@ Output with bounding boxes + freshness labels
 ├── train_demo1.ipynb    # Model training walkthrough
 ├── final_pipeline.py    # End-to-end inference pipeline
 └── testing_model_cnn.py # CNN model testing script
-
+```
 ---
 
 ## Tech Stack
 
 - **Python**
-- **YOLOv8** (Ultralytics) — object detection
-- **MobileNetV3** — image classification via transfer learning
-- **PyTorch** — model training
-- **OpenCV** — real-time video processing
-- **Django + React** — web interface
+- **YOLOv8** (Ultralytics) - object detection
+- **MobileNetV3** - image classification via transfer learning
+- **PyTorch** - model training
+- **OpenCV** - real-time video processing
+- **Django + React** - web interface
 
 ---
 
@@ -80,9 +84,9 @@ python final_pipeline.py
 
 ## Applications
 
-- Agriculture — quality control at harvest
-- Retail & supermarkets — automated shelf inspection  
-- Supply chain — freshness monitoring during transit
+- Agriculture - quality control at harvest
+- Retail & supermarkets - automated shelf inspection  
+- Supply chain - freshness monitoring during transit
 
 ---
 
