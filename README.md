@@ -24,6 +24,7 @@ Manual inspection of fruits and vegetables is slow, inconsistent, and contribute
 to food waste. This system automates that process in real time.
 
 Two models work together in a single pipeline:
+```
 Input (Image / Video / Webcam)
 ↓
 YOLOv8 - detects and localizes each fruit/vegetable
@@ -31,7 +32,7 @@ YOLOv8 - detects and localizes each fruit/vegetable
 MobileNetV3 - classifies each detected object as Fresh or Rotten
 ↓
 Output with bounding boxes + freshness labels
-
+```
 - **YOLOv8** handles object detection — finds where the fruits are in the frame
 - **MobileNetV3** handles classification — evaluates color, texture, and surface 
   patterns to determine freshness
